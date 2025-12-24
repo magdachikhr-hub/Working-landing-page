@@ -1,0 +1,34 @@
+@import url("./variables.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+main {
+  div.dark_purple {
+    background-image: url(./images/Rectangle.png);
+    height: 730px;
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 165px;
+      height: 146px;
+      h1 {
+        color: var(--font-color);
+      }
+      a {
+        color: var(--font-color);
+        text-decoration: underline overline var(--green) 3px;
+      }
+    }
+  }
+
+  div.light_purple {
+    background-image: url(./images/Rectangle\ Copy.png);
+    height: 730px;
+  }
+}
