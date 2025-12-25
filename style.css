@@ -114,9 +114,26 @@ main {
       }
     }
   }
-}
+  section.first {
+    position: relative;
+    height: 1464px;
+  }
 
-section.first {
-  position: relative;
-  height: 1464px;
+  section.second {
+    div.parent {
+      width: fit-content;
+      margin-top: 110px;
+      display: flex;
+      position: relative;
+
+      article.first_text {
+        width: 730px;
+        height: 413px;
+        background-color: var(--dark_purple);
+        position: absolute;
+        left: 382px;
+        top: 173px;
+      }
+    }
+  }
 }
