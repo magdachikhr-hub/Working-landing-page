@@ -11,6 +11,14 @@ main {
   div.dark_purple {
     background-image: url(./images/Rectangle.png);
     height: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /* bottom is telling the img to show only the ends */
 
     .heading {
       display: flex;
@@ -18,27 +26,30 @@ main {
       padding: 0 165px;
       height: 146px;
       align-items: center;
+      width: 100%;
       h1 {
         color: var(--font-color);
       }
       a {
         color: var(--font-color);
-        text-decoration: underline overline var(--green) 3px;
+        text-decoration: underline var(--green) 3px;
       }
-    }
-
-    div.light_purple {
-      background-image: url(./images/Rectangle\ Copy.png);
-      height: 730px;
     }
   }
 
   div.learn_more {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+
     h2 {
       color: white;
       font-size: 80px;
       font-weight: 600;
       width: 600px;
+      text-align: center;
     }
     a {
       background-color: var(--green);
@@ -47,4 +58,22 @@ main {
       padding: 15px 31.5px 16px 32.5px;
     }
   }
+
+  img.phone {
+    position: absolute;
+    bottom: -165px;
+  }
+
+  div.light_purple {
+    background-image: url(./images/Rectangle\ Copy.png);
+    height: 730px;
+    position: absolute;
+    z-index: -2;
+    top: 504px;
+  }
+}
+
+section.first {
+  position: relative;
+  height: 1464px;
 }
