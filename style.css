@@ -33,6 +33,7 @@ main {
       a {
         color: var(--font-color);
         text-decoration: underline var(--green) 3px;
+        text-underline-offset: 8px;
       }
     }
   }
@@ -66,10 +67,52 @@ main {
 
   div.light_purple {
     background-image: url(./images/Rectangle\ Copy.png);
-    height: 730px;
+    background-size: cover;
+    background-position: bottom;
+    height: 960px;
+    width: 100%;
     position: absolute;
     z-index: -2;
     top: 504px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 171px;
+    justify-content: center;
+
+    div.texts {
+      display: flex;
+      gap: 26px;
+
+      .article {
+        width: 354px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        div.circle {
+          width: 56px;
+          height: 56px;
+          border: 1px solid var(--dark_purple);
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        h3 {
+          font-weight: 600;
+          font-size: 32px;
+          color: var(--dark_purple);
+          margin-top: 56px;
+          margin-bottom: 28px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+    }
   }
 }
 
